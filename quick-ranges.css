@@ -1,0 +1,16 @@
+.quickRanges{margin:18px 0 12px;padding:14px;background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:20px;box-shadow:0 14px 40px rgba(18,65,65,.07);backdrop-filter:blur(14px)}
+.quickRangesHead{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:11px;padding:0 3px}
+.quickRangesHead small{display:block;color:var(--teal);font-size:9px;font-weight:800;margin-bottom:3px}
+.quickRangesHead b{font-size:13px;color:var(--deep)}
+.quickRangesHead>span{padding:7px 10px;border-radius:9px;background:#edf8f7;color:#087d78;border:1px solid #d1ebe8;font-size:10px;font-weight:800}
+.quickRangeButtons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.quickRangeBtn{min-width:0;border:1px solid #d9e8e8;background:#fbfdfd;border-radius:15px;padding:13px 14px;display:flex;align-items:center;gap:11px;text-align:right;color:var(--ink);cursor:pointer;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,background .22s ease}
+.quickRangeBtn:hover{transform:translateY(-2px);border-color:#a9d1ce;background:#fff;box-shadow:0 12px 28px rgba(9,90,90,.09)}
+.quickRangeBtn i{width:38px;height:38px;flex:0 0 auto;display:grid;place-items:center;border-radius:12px;background:#eaf6f5;color:var(--teal);font-style:normal;font-size:18px}
+.quickRangeBtn span{min-width:0}
+.quickRangeBtn b{display:block;font-size:12px;color:var(--deep);margin-bottom:4px}
+.quickRangeBtn small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:9px}
+.quickRangeBtn.active{border-color:var(--teal);background:linear-gradient(135deg,#effbf9,#e5f6f4);box-shadow:0 0 0 4px rgba(9,153,153,.08),0 13px 30px rgba(9,100,100,.1)}
+.quickRangeBtn.active i{background:linear-gradient(135deg,var(--deep),var(--teal));color:#fff;box-shadow:0 8px 18px rgba(9,120,120,.2)}
+.quickRangeBtn.active b{color:#076c68}
+@media(max-width:720px){.quickRanges{padding:11px}.quickRangesHead{align-items:flex-start}.quickRangeButtons{grid-template-columns:1fr}.quickRangeBtn{padding:12px}.quickRangeBtn small{white-space:normal}.quickRangesHead>span{white-space:nowrap}}
